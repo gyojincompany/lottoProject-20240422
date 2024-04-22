@@ -13,4 +13,4 @@ print(df)
 engine = create_engine("mysql+pymysql://root:12345@localhost:3306/lottodb?charset=utf8mb4")
 engine.connect()
 
-df.to_sql(name="test_tbl", con=engine, if_exists='append', index=False)
+df.to_sql(name="test_tbl", con=engine, if_exists='replace', index=False)
