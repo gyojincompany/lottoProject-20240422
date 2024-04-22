@@ -2,8 +2,9 @@ from sqlalchemy import create_engine
 import pandas as pd
 import pymysql
 
-
-data = {'학번': range(2000, 2010), '성적': [70,60,100,90,50,75,85,99,78,63]}
+data = {'학번': range(2000, 2015), '성적': [70,60,100,90,50,75,85,99,78,63,100,100,100,100,100]}
+# data = {'학번': range(2000, 2015), '성적': [70,60,100,90,50,75,85,99,78,63,100,100,100,100,100]}
+# 새로 추가된 데이터만 기존 테이블에 추가됨
 
 df = pd.DataFrame(data=data, columns=['학번','성적'])
 
